@@ -19,8 +19,8 @@ class Word_2_PDF(object):
 
 if __name__ == '__main__':
     
-    '''↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓只修改此处rootpath↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓'''
-    rootpath = r'C:\测试'       # 文件夹根目录
+    '''↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓修改此处rootpath后运行↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓'''
+    rootpath = r'C:\test'       # 文件夹根目录
     newfolder_name = rootpath[rootpath.rfind('\\')+1:] + 'pdf'
     outputfolder = os.path.join(rootpath, newfolder_name)       #输出文件夹路径，路径为原文件夹下新创建的'原文件名+pdf'文件夹 
     os.mkdir(outputfolder)
